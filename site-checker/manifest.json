@@ -1,0 +1,23 @@
+{
+	"name": "Site Checker",
+	"version": "1.0",
+	"description" : "Pre-HackHERS Series Workshop #4",
+	"manifest_version": 2,
+	"permissions": [
+		"tabs"
+	],
+	"background": {
+			"scripts": ["background.js"],
+			"persistent": false
+	}, 
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["contentScript.js"],
+			"run_at": "document_end"
+		}
+	],
+	"browser_action": {
+		"default_popup": "popup.html"
+	}
+}
