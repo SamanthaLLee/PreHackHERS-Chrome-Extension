@@ -4,7 +4,9 @@
 	"description" : "Pre-HackHERS Series Workshop #4",
 	"manifest_version": 2,
 	"permissions": [
-		"tabs"
+		"tabs",
+		"notifications",
+		"storage"
 	],
 	"background": {
 			"scripts": ["background.js"],
